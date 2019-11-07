@@ -1,0 +1,48 @@
+/* only small desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* tablets */
+@media (max-width: 991px) {
+  .owl-carousel iframe {
+    height: 450px;
+  }
+  .owl-prev, .owl-next {
+    top: 500px;
+  }
+}
+
+/* only small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* mobile or only mobile */
+@media (max-width: 767px) {
+  #hero-area .contents .head-title {
+    font-size: 50px;
+  }
+
+  .owl-carousel iframe {
+    height: 300px;
+  }
+
+  .owl-prev, .owl-next {
+    top: 320px;
+  }
+
+  .owl-nav {
+    bottom: 246px;
+  }
+
+  .owl-item h2 {
+    margin-top: 90px;
+  }
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding: 20px 0 15px;
+  }
+  .navbar-brand img {
+    width: 30%;
+  }
+}

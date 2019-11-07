@@ -1,0 +1,545 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: #12304a;
+  line-height: 25px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-size: 38px;
+  color: #12304a;
+  font-weight: 700;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+span{
+  display: inline-block;
+}
+
+.section-title {
+  padding: 10px 0 30px;
+  text-align: center;
+}
+.section-padding {
+  padding: 40px 0;
+}
+
+/* Preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 9999999;
+}
+
+.loader {
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+#loader-1:before, #loader-1:after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 7px solid transparent;
+  border-top-color: #0E9D46;
+}
+
+#loader-1:before {
+  z-index: 100;
+  animation: spin 1s infinite;
+}
+
+#loader-1:after {
+  border: 7px solid #f2f2f2;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+.navbar-brand {
+  position: relative;
+  padding: 0px;
+}
+
+.top-nav-collapse {
+  background: #fff;
+  z-index: 999999;
+  top: 0px !important;
+  box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+  background: #fff !important;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.navbar-expand-md .navbar-toggler {
+  position: fixed;
+  right: 10%;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+}
+
+.navbar-brand img {
+  width: 250px;
+}
+
+.menu-bg {
+  background: transparent;
+}
+
+.navbar-expand-md .navbar-nav .nav-item {
+  padding-left: 25px;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  color: #333;
+  font-weight: 600;
+  padding: 7px 0;
+  cursor: pointer;
+  position: relative;
+  background: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-expand-md .navbar-nav li a:hover,
+.navbar-expand-md .navbar-nav li .active > a,
+.navbar-expand-md .navbar-nav li a:focus {
+  color: #fff;
+  outline: none;
+}
+
+.navbar-expand-md .navbar-nav .nav-link:hover,
+.navbar-expand-md .navbar-nav .nav-link:hover::before,
+.navbar-expand-md .navbar-nav .nav-link:focus {
+  color: #3BB349;
+  width: 100%;
+  transition: width 1s;
+  -webkit-transition: width 1s;
+  -ms-transition: width 1s;
+}
+
+.navbar {
+  /* padding: 20px 0; */
+  background: #fff;
+}
+
+.navbar li.active a.nav-link {
+  color: #preset;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+#hero-area {
+  background-image: url(../img/main_small.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+  padding: 180px 0 80px;
+}
+
+#hero-area::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1ac35d;
+    opacity: 0.3;
+}
+
+#hero-area .contents .head-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 10px;
+  margin-top: 55px;
+  color: #fff;
+}
+
+#hero-area .contents {
+  text-align: center;
+}
+
+#hero-area .contents p {
+  font-size: 20px;
+  margin-top: 15px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#hero-area .contents .header-button {
+  margin-top: 20px;
+  color: #222222;
+}
+
+#hero-area .contents .header-button .btn {
+  margin-right: 10px;
+}
+
+.sloder-img {
+  background: #34363a;
+}
+
+
+/* Footer Area Start */
+.footer-area {
+  position: relative;
+  background: #f3f4f6;
+}
+
+.footer-area .footer-titel {
+  font-size: 18px;
+  color: #333333;
+  font-weight: 500;
+  padding-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.footer-area .footer-titel span {
+  color: #ccc;
+  font-weight: 400;
+}
+
+.footer-area .footer-link li {
+  margin-bottom: 10px;
+}
+
+.footer-area .footer-link {
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-area .footer-link li a {
+  color: #12304a;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  text-decoration: none;
+}
+
+.footer-area .footer-link li a:hover {
+  color: #3BB349;
+}
+
+.footer-area .address li {
+  margin-bottom: 20px;
+}
+
+.footer-area .address li a {
+  color: #666666;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.footer-area .address li a i {
+  font-size: 22px;
+  width: 32px;
+  vertical-align: middle;
+  height: 36px;
+  text-align: center;
+  display: inline-block;
+  float: left;
+  margin-right: 5px;
+  line-height: 32px;
+}
+
+.footer-area #subscribe-form {
+  margin-top: 10px;
+}
+
+.footer-area #subscribe-form .form-group {
+  position: relative;
+}
+
+.footer-area #subscribe-form .form-group .btn-common {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7px 15px;
+  height: 52px;
+  border-radius: 0;
+  background: transparent;
+  color: #F63854;
+}
+
+#copyright .copyright-content {
+  border-top: 1px solid rgba(18, 48, 74, 0.1);
+  padding: 0;
+  margin: 45px 0 0px;
+}
+
+#copyright p {
+  font-size: 14px;
+  line-height: 42px;
+  text-align: center;
+  margin: 0;
+}
+
+#copyright p a {
+  color: #F63854;
+}
+
+/*--data-map-*/
+
+#data-map .data-map-content {
+  text-align: center;
+}
+
+#data-map .data-map-content h3 {
+  font-size: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#0E9D47), color-stop(98%, #1DD064), to(#1DD064));
+  background: linear-gradient(to right, #0E9D47 0%, #1DD064 98%, #1DD064 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#data-map .size-col>div {
+  min-width: 228px;
+}
+
+/*---partners---*/
+
+#partners {
+  text-align: center;
+  padding: 0px 0 100px;
+}
+
+#partners img {
+  width: 70%;
+}
+
+/* owlCarousel */
+.owl-carousel {
+  margin-top: 10px;
+}
+
+.owl-carousel iframe {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px 0 rgba(51,63,82,0.15);
+}
+
+.owl-item {
+  text-align: center;
+  padding: 0;
+}
+
+.owl-item h2 {
+  font-size: 34px;
+  margin-top: 15px;
+}
+
+.owl-nav .owl-prev, .owl-nav .owl-next {
+  outline: none;
+}
+
+.owl-prev {
+  position: absolute;
+  top: 680px;
+  left: 0;
+}
+
+.owl-next {
+  position: absolute;
+  top: 680px;
+  right: 0;
+}
+
+.owl-arrow {
+  padding: 23px;
+  margin: 9px;
+  background: #F3F4F6;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: 43%;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.owl-arrow:hover {
+  background: #e8eaef;
+  background-repeat: no-repeat;
+  background-size: 43%;
+  border-radius: 50%;
+}
+
+.owl-arrow.arrow-prev {
+  background-position: 43% center;
+  background-image: url(../img/left-arrow.svg);
+}
+
+.owl-arrow.arrow-next {
+  background-position: 56% center;
+  background-image: url(../img/right-arrow.svg);
+}
+
+#container {
+ width:100%;
+ text-align:center;
+}
+#container > div {
+ width: calc(100% / 3);  
+ display: inline-block;
+ vertical-align: middle;  
+ text-align:center;
+ margin:2%;    
+ padding:20px;
+}
+
+.widget {
+ width:100%;
+ text-align:center;
+}
+.textwidget {
+ width: calc(100% / 4);  
+ display: inline-block;
+ vertical-align: middle;  
+ text-align:center;
+ margin:2%;    
+ padding:20px;
+ color: #333;
+}
+#smallbox {
+  cursor: pointer;
+}
+/*
+  Menu Button Styles
+ */
+
+.icon-menu {
+    position: relative;
+    display: inline-block;
+    width: 22px;
+    height: 19px;
+    vertical-align: middle;
+    fill: none;
+}
+
+/* Global menu icon line styles */
+.icon-menu .line {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 3px;
+    -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+       -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+         -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+            transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+       -moz-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+         -o-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    background-color: #12304a;
+}
+
+/* Menu icon line 1 */
+.icon-menu .line-1 {
+    top: 0;
+}
+
+/* When active, rotate line 1 to be lefthand part of X */
+.is-active .icon-menu .line-1 {
+    -webkit-transform: translateY(8px) translateX(0) rotate(45deg);
+       -moz-transform: translateY(8px) translateX(0) rotate(45deg);
+            transform: translateY(8px) translateX(0) rotate(45deg);
+}
+
+/* Line 2 */
+.icon-menu .line-2 {
+    top: 50%;
+    margin-top: -2px;
+}
+
+/* When active, hide line 2 */
+.is-active .icon-menu .line-2 {
+    opacity: 0;
+}
+
+/* Line 3 */
+.icon-menu .line-3 {
+    bottom: 0;
+}
+
+/* When active, rotate line 3 to be righthand part of X */
+.is-active .icon-menu .line-3 {
+    -webkit-transform: translateY(-8px) translateX(0) rotate(-45deg);
+       -moz-transform: translateY(-8px) translateX(0) rotate(-45deg);
+            transform: translateY(-8px) translateX(0) rotate(-45deg);
+}
+
+/*Selection*/
+select {
+  width: 100%;
+  padding: 5px 10px 5px 10px;
+  font-size: 16px;
+  border: 1px solid #CCC;
+  height: 34px;
+  text-align: right;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
+/* CAUTION: Internet Explorer hackery ahead */
+
+
+select::-ms-expand {
+    display: none; /* Remove default arrow in Internet Explorer 10 and 11 */
+}
+
+/* Target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+    select {
+        background: none\9;
+        padding: 5px\9;
+    }
+}
